@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ft-family);
+  }
+
+  :root {
+    --cl-primary: hsl(47, 88%, 63%);
+    --cl-white: hsl(0, 0%, 100%);
+    --cl-grey: hsl(0, 0%, 50%);
+    --cl-black: hsl(0, 0%, 7%);
+    
+    --ft-size: 16px;
+    --ft-family: "Figtree", sans-serif;
+    --ft-weights-500: 500;
+    --ft-weights-800: 800;
+  }
+
+  body {
+    background-color: var(--cl-primary);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 400px;
+    min-width: 325px;
+    margin: 23px;
+    padding: 22px;
+    border-radius: 1.25rem;
+    border: 1px solid var(--cl-black);
+    box-shadow: 8px 8px 0 var(--cl-black);
+    background-color: var(--cl-white);
+    display: grid;
+    gap: 10px;
+  }
+
+  .article_picture {
+    display: block;
+    width: 100%;
+    border-radius: .75rem;
+  }
+
+  .progress {
+    background-color: var(--cl-primary);
+    font-weight: var(--ft-weights-800);
+    font-size: calc(var(--ft-size) - 3px);
+    color: var(--cl-black);
+    width: fit-content;
+    padding: 7px 11px;
+    margin-top: 14px;
+    border-radius: 5px;
+  }
+
+  .date {
+    color: var(--cl-black);
+    font-weight: var(--ft-weights-500);
+    font-size: calc(var(--ft-size) - 2px);
+    margin: 5px 0;
+  }
+
+  .article_title {
+    font-weight: var(--ft-weights-800);
+    font-size: calc(var(--ft-size) + 8px);
+    color: var(--cl-black);
+    margin: 5px 0;
+  }
+
+  .article_description {
+    color: var(--cl-grey);
+    font-size: var(--ft-size);
+    font-weight: var(--ft-weights-500);
+  }
+
+  .article_author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .avatar {
+    display: block;
+    height: 2rem;
+  }
+
+  .author_name {
+    font-size: calc(var(--ft-size) - 2px);
+    font-weight: var(--ft-weights-800);
+  }
+
+/* HOVER SECTION */
+  .container:hover {
+    cursor: pointer;
+    box-shadow: 18px 18px 0 var(--cl-black);
+  }
+    
+  .container:hover h2.article_title {
+    color: var(--cl-primary)
+  }
+
+/* additional section */
+  .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+    }
+
+  .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
