@@ -100,7 +100,7 @@
     box-shadow: 18px 18px 0 var(--cl-black);
   }
     
-  .container:hover h2.article_title {
+  .container:hover h1.article_title {
     color: var(--cl-primary)
   }
 
