@@ -36,6 +36,7 @@
     background-color: var(--cl-white);
     display: grid;
     gap: 10px;
+    transition: 0.2s ease-in-out;
   }
 
   .article_picture {
@@ -67,6 +68,7 @@
     font-size: calc(var(--ft-size) + 8px);
     color: var(--cl-black);
     margin: 5px 0;
+    transition: 0.25s ease-out;
   }
 
   .article_description {
