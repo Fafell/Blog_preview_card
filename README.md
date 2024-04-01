@@ -1,4 +1,4 @@
-# Frontend Mentor - Blog preview card solution
+# Blog preview card solution
 
 ## Welcome! 👋
 
